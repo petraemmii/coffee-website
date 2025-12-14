@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Helsinki Coffee Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">☕ Petra's Coffee Website</h1>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cafes.html">Cafés</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <h2>Get in Touch</h2>
+            <p>Let's connect over coffee! ☕</p>
+        </section>
+
+        <!-- Contact Content -->
+        <div class="contact-container">
+            
+            <!-- Social Links Section -->
+            <section class="social-section">
+                <h3>Connect With Me</h3>
+                <p class="section-intro">Find me on social media or check out my coding projects!</p>
+                
+                <div class="social-links">
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/in/petrapaavola/" target="_blank" class="social-card linkedin">
+                        <div class="social-icon">💼</div>
+                        <div class="social-info">
+                            <h4>LinkedIn</h4>
+                            <p>Professional profile & experience</p>
+                        </div>
+                    </a>
+
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/petraemmii/" target="_blank" class="social-card instagram">
+                        <div class="social-icon">📸</div>
+                        <div class="social-info">
+                            <h4>Instagram</h4>
+                            <p>Coffee adventures & daily life</p>
+                        </div>
+                    </a>
+
+                    <!-- GitHub -->
+                    <a href="https://github.com/petraemmii" target="_blank" class="social-card github">
+                        <div class="social-icon">💻</div>
+                        <div class="social-info">
+                            <h4>GitHub</h4>
+                            <p>Projects built by caffeinated me</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Café Suggestion Form Section -->
+            <section class="suggestion-section">
+                <h3>Suggest a Café</h3>
+                <p class="section-intro">Know a great coffee spot I should try? Let me know!</p>
+                
+                <form class="cafe-suggestion-form">
+                    <div class="form-group">
+                        <label for="your-name">Your Name</label>
+                        <input type="text" id="your-name" name="your-name" placeholder="What should I call you?" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="your-email">Your Email (optional)</label>
+                        <input type="email" id="your-email" name="your-email" placeholder="your.email@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cafe-name">Café Name</label>
+                        <input type="text" id="cafe-name" name="cafe-name" placeholder="What's the café called?" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cafe-location">Location</label>
+                        <input type="text" id="cafe-location" name="cafe-location" placeholder="Where is it located?" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="why-suggest">Why should I try it?</label>
+                        <textarea id="why-suggest" name="why-suggest" rows="5" placeholder="Tell me what makes this place special..." required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="specialties">Special Features (optional)</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="features" value="vegan"> 🌱 Vegan Options
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="features" value="dogs"> 🐕 Dogs Welcome
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="features" value="laptop"> 💻 Laptop Friendly
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="features" value="wheelchair"> ♿ Wheelchair Accessible
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-button">Send Suggestion ☕</button>
+                </form>
+
+                <p class="form-note">Note: This is a demonstration form. Submissions are not actually sent.</p>
+            </section>
+
+            <!-- Coffee Quote -->
+            <section class="contact-quote">
+                <blockquote>
+                    "Oispa kahvii" ☕
+                </blockquote>
+                <p>- My daily mantra</p>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Made with ☕ and 💙</p>
+    </footer>
+</body>
+</html>
