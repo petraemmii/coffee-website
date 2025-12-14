@@ -10,7 +10,7 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <h1 class="logo">☕ Petra's Coffee Website</h1>
+            <div class="logo">☕ Petra's Coffee Website</div>
             <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="cafes.html">Cafés</a></li>
@@ -23,43 +23,43 @@
     <!-- Main Content -->
     <main>
         <!-- Page Header -->
-        <section class="page-header">
-            <h2>Get in Touch</h2>
+        <div class="page-header">
+            <h1>Get in Touch</h1>
             <p>Let's connect over coffee! ☕</p>
-        </section>
+        </div>
 
         <!-- Contact Content -->
         <div class="contact-container">
             
             <!-- Social Links Section -->
             <section class="social-section">
-                <h3>Connect With Me</h3>
+                <h2>Connect With Me</h2>
                 <p class="section-intro">Find me on social media or check out my coding projects!</p>
                 
                 <div class="social-links">
                     <!-- LinkedIn -->
-                    <a href="https://www.linkedin.com/in/petrapaavola/" target="_blank" class="social-card linkedin">
+                    <a href="https://www.linkedin.com/in/petrapaavola/" target="_blank" rel="noopener noreferrer" class="social-card linkedin">
                         <div class="social-icon">💼</div>
                         <div class="social-info">
-                            <h4>LinkedIn</h4>
+                            <h3>LinkedIn</h3>
                             <p>Professional profile & experience</p>
                         </div>
                     </a>
 
                     <!-- Instagram -->
-                    <a href="https://www.instagram.com/petraemmii/" target="_blank" class="social-card instagram">
+                    <a href="https://www.instagram.com/petraemmii/" target="_blank" rel="noopener noreferrer" class="social-card instagram">
                         <div class="social-icon">📸</div>
                         <div class="social-info">
-                            <h4>Instagram</h4>
+                            <h3>Instagram</h3>
                             <p>Coffee adventures & daily life</p>
                         </div>
                     </a>
 
                     <!-- GitHub -->
-                    <a href="https://github.com/petraemmii" target="_blank" class="social-card github">
+                    <a href="https://github.com/petraemmii" target="_blank" rel="noopener noreferrer" class="social-card github">
                         <div class="social-icon">💻</div>
                         <div class="social-info">
-                            <h4>GitHub</h4>
+                            <h3>GitHub</h3>
                             <p>Projects built by caffeinated me</p>
                         </div>
                     </a>
@@ -68,10 +68,10 @@
 
             <!-- Café Suggestion Form Section -->
             <section class="suggestion-section">
-                <h3>Suggest a Café</h3>
+                <h2>Suggest a Café</h2>
                 <p class="section-intro">Know a great coffee spot I should try? Let me know!</p>
                 
-                <form class="cafe-suggestion-form">
+                <form action="#" method="post" class="cafe-suggestion-form">
                     <div class="form-group">
                         <label for="your-name">Your Name</label>
                         <input type="text" id="your-name" name="your-name" placeholder="What should I call you?" required>
@@ -97,8 +97,8 @@
                         <textarea id="why-suggest" name="why-suggest" rows="5" placeholder="Tell me what makes this place special..." required></textarea>
                     </div>
 
-                    <div class="form-group">
-                        <label for="specialties">Special Features (optional)</label>
+                    <fieldset class="form-group">
+                        <legend>Special Features (optional)</legend>
                         <div class="checkbox-group">
                             <label class="checkbox-label">
                                 <input type="checkbox" name="features" value="vegan"> 🌱 Vegan Options
@@ -113,7 +113,7 @@
                                 <input type="checkbox" name="features" value="wheelchair"> ♿ Wheelchair Accessible
                             </label>
                         </div>
-                    </div>
+                    </fieldset>
 
                     <button type="submit" class="submit-button">Send Suggestion ☕</button>
                 </form>
@@ -122,12 +122,10 @@
             </section>
 
             <!-- Coffee Quote -->
-            <section class="contact-quote">
-                <blockquote>
-                    "Oispa kahvii" ☕
-                </blockquote>
+            <div class="contact-quote">
+                <blockquote>"Oispa kahvii" ☕</blockquote>
                 <p>- My daily mantra</p>
-            </section>
+            </div>
 
         </div>
     </main>
