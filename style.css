@@ -6,10 +6,30 @@
 }
 
 body {
-    font-family: 'nunito-sans', sans-serif;
+    font-family: 'Garamond', serif;
     background-color: #FAF7F2; /* Warm cream */
     color: #3E2723; /* Deep brown */
     line-height: 1.6;
+}
+
+/* ===== ICON STYLES ===== */
+.icon {
+    width: 1em;              /* scales with text size */
+    height: 1em;
+    vertical-align: middle;  /* aligns with text baseline */
+    margin-right: 0.25em;
+}
+
+.icon-card {
+    width: 32px;             /* fixed size for card headers */
+    height: 32px;
+    display: block;
+    margin: 0 auto;          /* centers inside .card-icon */
+}
+.card-icon img {
+    width: 40px;   /* or whatever size you want */
+    height: 40px;
+    object-fit: contain;  /* ensures proportional scaling */
 }
 
 /* ===== NAVIGATION ===== */
@@ -213,6 +233,13 @@ main {
     background-color: #5C7557;
 }
 
+.tag-icon {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  vertical-align: text-bottom; /* keeps baseline tidy */
+}
+
 /* ===== REVIEWS SECTION ===== */
 .reviews-section {
     background-color: #4A5D47;
@@ -390,15 +417,15 @@ footer {
 }
 
 .social-card.linkedin:hover {
-    border-color: #0077B5;
+    border-color: #4A5D47;
 }
 
 .social-card.instagram:hover {
-    border-color: #E4405F;
+    border-color: #4A5D47;
 }
 
 .social-card.github:hover {
-    border-color: #333;
+    border-color: #4A5D47;
 }
 
 .social-icon {
@@ -454,7 +481,7 @@ footer {
     border: 2px solid #C9A66B;
     border-radius: 8px;
     font-size: 1rem;
-    font-family: inherit;
+    font-family: nunito, sans-serif;
     background-color: #FAF7F2;
     transition: border-color 0.3s ease;
 }
@@ -502,7 +529,6 @@ footer {
     border: none;
     border-radius: 25px;
     font-size: 1.2rem;
-    font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
     margin-top: 1rem;
@@ -518,7 +544,7 @@ footer {
     text-align: center;
     color: #8B5A3C;
     font-size: 0.9rem;
-    font-style: italic;
+    font-weight: bold;
     margin-top: 1rem;
 }
 
@@ -532,7 +558,7 @@ footer {
 
 .contact-quote blockquote {
     font-size: 2.5rem;
-    font-family: 'Comic Sans MS', cursive;
+    font-family: 'garamond', cursive;
     font-weight: bold;
     color: #FAF7F2;
     margin-bottom: 1rem;
@@ -639,7 +665,8 @@ footer {
 .journey-block {
     padding: 2rem;
     border-radius: 10px;
-    border-left: 5px solid;
+    border-left: 5px solid #6B4423;
+    background: linear-gradient(135deg, #E8DED0 0%, #D4C4B0 100%);
 }
 
 .journey-block h4 {
@@ -663,27 +690,6 @@ footer {
 
 .journey-block strong {
     color: #3E2723;
-}
-
-/* Different colored blocks */
-.struggle {
-    background-color: #FFE5E5;
-    border-left-color: #D32F2F;
-}
-
-.time-consuming {
-    background-color: #FFF3E0;
-    border-left-color: #F57C00;
-}
-
-.excited {
-    background-color: #E8F5E9;
-    border-left-color: #388E3C;
-}
-
-.frustration {
-    background-color: #F3E5F5;
-    border-left-color: #7B1FA2;
 }
 
 /* Lessons Grid */
@@ -837,11 +843,15 @@ footer {
 }
 
 .hero-image {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-image: url("images/best_coffee_spots_helsinki.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .placeholder-hero {
@@ -1027,7 +1037,7 @@ footer {
 
 .home-quote {
     font-size: 3rem;
-    font-family: 'Comic Sans MS', cursive;
+    font-family: 'garamond', cursive;
     font-weight: bold;
     color: #FAF7F2;
     margin-bottom: 1rem;

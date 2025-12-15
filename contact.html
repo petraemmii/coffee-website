@@ -10,7 +10,10 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">☕ Petra's Coffee Website</div>
+<div class="logo">
+    <img src="assets/icons/coffee-cup.svg" alt="Coffee icon" width="32" height="32">
+    Petra's Coffee Website
+</div>
             <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="cafes.html">Cafés</a></li>
@@ -23,10 +26,13 @@
     <!-- Main Content -->
     <main>
         <!-- Page Header -->
-        <div class="page-header">
-            <h1>Get in Touch</h1>
-            <p>Let's connect over coffee! ☕</p>
-        </div>
+<div class="page-header">
+    <h1>Get in Touch</h1>
+    <p>Let's connect over coffee! 
+        <img src="assets/icons/coffee-beans.svg" alt="Coffee beans icon" style="width: 1em; height: 1em; vertical-align: middle;">
+    </p>
+</div>
+
 
         <!-- Contact Content -->
         <div class="contact-container">
@@ -39,7 +45,7 @@
                 <div class="social-links">
                     <!-- LinkedIn -->
                     <a href="https://www.linkedin.com/in/petrapaavola/" target="_blank" rel="noopener noreferrer" class="social-card linkedin">
-                        <div class="social-icon">💼</div>
+                        <img src="assets/icons/linkedin.svg" alt="LinkedIn logo" width="32" height="32">
                         <div class="social-info">
                             <h3>LinkedIn</h3>
                             <p>Professional profile & experience</p>
@@ -48,7 +54,7 @@
 
                     <!-- Instagram -->
                     <a href="https://www.instagram.com/petraemmii/" target="_blank" rel="noopener noreferrer" class="social-card instagram">
-                        <div class="social-icon">📸</div>
+                        <img src="assets/icons/instagram.svg" alt="Instagram logo" width="32" height="32">
                         <div class="social-info">
                             <h3>Instagram</h3>
                             <p>Coffee adventures & daily life</p>
@@ -57,7 +63,7 @@
 
                     <!-- GitHub -->
                     <a href="https://github.com/petraemmii" target="_blank" rel="noopener noreferrer" class="social-card github">
-                        <div class="social-icon">💻</div>
+                        <img src="assets/icons/github.svg" alt="GitHub logo" width="32" height="32">
                         <div class="social-info">
                             <h3>GitHub</h3>
                             <p>Projects built by caffeinated me</p>
@@ -72,15 +78,6 @@
                 <p class="section-intro">Know a great coffee spot I should try? Let me know!</p>
                 
                 <form action="#" method="post" class="cafe-suggestion-form">
-                    <div class="form-group">
-                        <label for="your-name">Your Name</label>
-                        <input type="text" id="your-name" name="your-name" placeholder="What should I call you?" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="your-email">Your Email (optional)</label>
-                        <input type="email" id="your-email" name="your-email" placeholder="your.email@example.com">
-                    </div>
 
                     <div class="form-group">
                         <label for="cafe-name">Café Name</label>
@@ -97,23 +94,28 @@
                         <textarea id="why-suggest" name="why-suggest" rows="5" placeholder="Tell me what makes this place special..." required></textarea>
                     </div>
 
-                    <fieldset class="form-group">
-                        <legend>Special Features (optional)</legend>
-                        <div class="checkbox-group">
-                            <label class="checkbox-label">
-                                <input type="checkbox" name="features" value="vegan"> 🌱 Vegan Options
-                            </label>
-                            <label class="checkbox-label">
-                                <input type="checkbox" name="features" value="dogs"> 🐕 Dogs Welcome
-                            </label>
-                            <label class="checkbox-label">
-                                <input type="checkbox" name="features" value="laptop"> 💻 Laptop Friendly
-                            </label>
-                            <label class="checkbox-label">
-                                <input type="checkbox" name="features" value="wheelchair"> ♿ Wheelchair Accessible
-                            </label>
-                        </div>
-                    </fieldset>
+<fieldset class="form-group">
+    <legend>Special Features (optional)</legend>
+    <div class="checkbox-group">
+        <label class="checkbox-label">
+            <input type="checkbox" name="features" value="vegan">
+            <img src="assets/icons/vegan.svg" alt="Vegan icon" class="icon"> Vegan Options
+        </label>
+        <label class="checkbox-label">
+            <input type="checkbox" name="features" value="dogs">
+            <img src="assets/icons/dog.svg" alt="Dog icon" class="icon"> Dogs Welcome
+        </label>
+        <label class="checkbox-label">
+            <input type="checkbox" name="features" value="laptop">
+            <img src="assets/icons/laptop.svg" alt="Laptop icon" class="icon"> Laptop Friendly
+        </label>
+        <label class="checkbox-label">
+            <input type="checkbox" name="features" value="wheelchair">
+            <img src="assets/icons/wheelchair.svg" alt="Wheelchair icon" class="icon"> Wheelchair Accessible
+        </label>
+    </div>
+</fieldset>
+
 
                     <button type="submit" class="submit-button">Send Suggestion ☕</button>
                 </form>
@@ -123,7 +125,7 @@
 
             <!-- Coffee Quote -->
             <div class="contact-quote">
-                <blockquote>"Oispa kahvii" ☕</blockquote>
+                <blockquote>"Oispa kahvii"  <img src="assets/icons/coffee-beans.svg" alt="Coffee beans icon" style="width: 1em; height: 1em; vertical-align: middle;"> </blockquote>
                 <p>- My daily mantra</p>
             </div>
 
@@ -131,8 +133,16 @@
     </main>
 
     <!-- Footer -->
-    <footer>
-        <p>&copy; Made with ☕ and 💙</p>
-    </footer>
+<footer>
+    <p>
+        &copy; Made with <img src="assets/icons/coffee-bean-cup.svg" alt="Coffee cup icon" class="icon">and <img src="assets/icons/heart.svg" alt="Heart icon" class="icon">
+    </p> 
+    <p class="footer-links">
+        <a href="index.html">Home</a> • 
+        <a href="cafes.html">Cafés</a> • 
+        <a href="about.html">About</a> • 
+        <a href="contact.html">Contact</a>
+    </p>
+</footer>
 </body>
 </html>
